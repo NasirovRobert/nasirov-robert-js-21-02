@@ -6,7 +6,6 @@ html, body, h1, h4, p {
     margin: 0;
     box-sizing: border-box;
     font-family: Aril, Tahoma, sans-serif;
-    color: #44525e;
 }
 
 a {
@@ -29,24 +28,28 @@ a {
     flex-wrap: nowrap;
 }
 
-header {
+.header {
     background-color: green;
-    color: white;
+
 }
 
-nav {
+.header__h1 {
+    color: white;
+    font-size: 25px;
+    padding: 10px;
+}
+
+aside {
     background-color: #ccc;
     flex-grow: 1;
+    width: 25%;
     padding: 10px;
 }
 
-.main h1 {
-    margin: 20px 0 5px 0;
-}
-
-h2 {
-    margin: 0;
-    padding: 10px;
+.aside__category {
+    font-weight: bolder;
+    font-size: 14px;
+    word-wrap: break-word;
 }
 
 ul {
@@ -61,22 +64,40 @@ li {
 .main {
     margin-left: 10px;
     flex-grow: 3;
+    width: 75%;
     margin-bottom: 50px;
 }
 
-.fish {
+.main__h2 {
+    margin: 0;
+    padding: 10px 10px 0 10px;
+    font-size: 25px;
+}
+
+.main__p {
+    padding: 0 10px 10px 10px;
+}
+
+.main__fish {
     padding: 10px;
-    margin: 10px 0;
-    flex-basis: 49%;
-    min-width: 300px;
+    margin: 10px;
+    flex-basis: calc(49% - 20px);
     background-color: #ccc;
+}
+
+.popular {
+    margin: 20px 0;
+    padding-left: 10px;
+    font-size: 25px;
+    font-weight: bolder;
 }
 
 .fish-card {
     flex-wrap: wrap;
+    justify-content: space-around;
 }
 
-.item {
+.fishcard__item {
     flex-basis: 30%;
     padding: 10px;
     display: flex;
@@ -84,14 +105,14 @@ li {
     margin: 15px 0;
 }
 
-.text {
+.fishcard__text {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     margin-left: 10px;
 }
 
-.img {
+.fishcard__img {
     width: 75px;
     height: 75px;
     background-color: #44525e;
@@ -104,16 +125,25 @@ footer {
     justify-content: space-between;
 }
 
-@media screen and (max-width:755px) {
-    .fish {
+.footer__link {
+    text-decoration: none;
+    color: #44525e;
+}
+
+@media screen and (max-width: 755px) {
+    .main__fish {
         flex-basis: 100%;
         min-width: auto;
         text-align: center;
     }
+
+    ul {
+        padding-left: 0px;
+    }
 }
 
-@media screen and (max-width:478px) {
-    .item {
+@media screen and (max-width: 478px) {
+    .fishcard__item {
         flex-basis: 70%;
     }
 
