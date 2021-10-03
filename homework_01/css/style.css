@@ -6,7 +6,6 @@ html, body, h1, h4, p {
     margin: 0;
     box-sizing: border-box;
     font-family: Aril, Tahoma, sans-serif;
-    color: #44525e;
 }
 
 a {
@@ -29,24 +28,38 @@ a {
     flex-wrap: nowrap;
 }
 
-header {
+.header {
     background-color: green;
-    color: white;
+
 }
 
-nav {
+.header__h1 {
+    color: white;
+    font-size: 25px;
+    padding: 10px;
+}
+
+aside {
     background-color: #ccc;
     flex-grow: 1;
+    width: 25%;
     padding: 10px;
 }
 
-.main h1 {
-    margin: 20px 0 5px 0;
+.aside__category {
+    font-weight: bolder;
+    font-size: 14px;
+    word-wrap: break-word;
 }
 
-h2 {
+.main__h2 {
     margin: 0;
-    padding: 10px;
+    padding: 10px 10px 0 10px;
+    font-size: 25px;
+}
+
+.main__p {
+    padding: 0 10px 10px 10px;
 }
 
 ul {
@@ -61,19 +74,20 @@ li {
 .main {
     margin-left: 10px;
     flex-grow: 3;
+    width: 75%;
     margin-bottom: 50px;
 }
 
-.fish {
+.main__fish {
     padding: 10px;
-    margin: 10px 0;
-    flex-basis: 49%;
-    min-width: 300px;
+    margin: 10px;
+    flex-basis: calc(49% - 20px);
     background-color: #ccc;
 }
 
 .fish-card {
     flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 .item {
@@ -104,15 +118,24 @@ footer {
     justify-content: space-between;
 }
 
-@media screen and (max-width:755px) {
-    .fish {
+.footer__link {
+    text-decoration: none;
+    color: #44525e;
+}
+
+@media screen and (max-width: 755px) {
+    .main__fish {
         flex-basis: 100%;
         min-width: auto;
         text-align: center;
     }
+
+    ul {
+        padding-left: 0px;
+    }
 }
 
-@media screen and (max-width:478px) {
+@media screen and (max-width: 478px) {
     .item {
         flex-basis: 70%;
     }
