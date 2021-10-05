@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>Homework_1</title>
+	<title>Homework_2</title>
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -12,92 +12,117 @@
 		<header class="header">
 			<h1 class="header__h1">Интернет-магазин "Не только красивое"</h1>
 		</header>
-		<div class="wrap nowrap">
-			<aside>
-				<p class="aside__category">Морская рыба</p>
-				<ul>
-					<li><label for="fish_1_1"><input type="checkbox" id="fish_1_1">Акула</label></li>
-					<li><label for="fish_1_2"><input type="checkbox" id="fish_1_2">Окунь</label></li>
-					<li><label for="fish_1_3"><input type="checkbox" id="fish_1_3">Палтус</label></li>
-					<li><label for="fish_1_4"><input type="checkbox" id="fish_1_4">Треска</label></li>
-				</ul>
-				<p class="aside__category">Пресноводная рыба</p>
-				<ul>
-					<li><label for="fish_2_1"><input type="checkbox" id="fish_2_1">Белоглазка</label></li>
-					<li><label for="fish_2_2"><input type="checkbox" id="fish_2_2">Осетр</label></li>
-					<li><label for="fish_2_3"><input type="checkbox" id="fish_2_3">Речной угорь</label></li>
-					<li><label for="fish_2_4"><input type="checkbox" id="fish_2_4">Налим</label></li>
-				</ul>
+		<div class="main-page main-page_vertical-margin_10px">
+			<aside class="aside aside_padding_10px">
+				<div class="fish-list">
+					<p class="fish-list__heading">Морская рыба</p>
+					<ul class="fish-list__list">
+						<li class="fish-list__list-item"><label for="fish_1_1"><input type="checkbox" id="fish_1_1">Акула</label>
+						</li>
+						<li class="fish-list__list-item"><label for="fish_1_2"><input type="checkbox" id="fish_1_2">Окунь</label>
+						</li>
+						<li class="fish-list__list-item"><label for="fish_1_3"><input type="checkbox" id="fish_1_3">Палтус</label>
+						</li>
+						<li class="fish-list__list-item"><label for="fish_1_4"><input type="checkbox" id="fish_1_4">Треска</label>
+						</li>
+					</ul>
+				</div>
+				<div class="fish-list">
+					<p class="fish-list__heading">Пресноводная рыба</p>
+					<ul class="fish-list__list">
+						<li class="fish-list__list-item"><label for="fish_2_1"><input type="checkbox" id="fish_2_1">Белоглазка</label>
+						</li>
+						<li class="fish-list__list-item"><label for="fish_2_2"><input type="checkbox" id="fish_2_2">Осетр</label>
+						</li>
+						<li class="fish-list__list-item"><label for="fish_2_3"><input type="checkbox" id="fish_2_3">Речной
+							угорь</label>
+						</li>
+						<li class="fish-list__list-item"><label for="fish_2_4"><input type="checkbox" id="fish_2_4">Налим</label>
+						</li>
+					</ul>
+				</div>
 			</aside>
-			<div class="main">
-				<h2 class="main__h2">Рыбы на любой вкус</h2>
-				<p class="main__p">Мы продаем рыбов, а не только показываем!</p>
-				<div class="wrap">
-					<div class="main__fish">
-						<p><a href="">Замороженные рыбы</a></p>
-						<p>Мы заморозили рыбов для вас</p>
+			<div class="main-content main-content_padding_bottom-left">
+				<div class="content-title content-title_padding_10px">
+					<h2 class="content-title__h2">Рыбы на любой вкус</h2>
+					<p class="content-title__p">Мы продаем рыбов, а не только показываем!</p>
+				</div>
+				<div class="product-groups product-groups_vertical-margin_10px">
+					<div class="product-groups__item">
+						<p class="product-groups__title"><a class="product-groups__link" href="">Замороженные рыбы</a>
+						</p>
+						<p class="product-groups__subtitle">Мы заморозили рыбов для вас</p>
 					</div>
-					<div class="main__fish">
-						<p><a href="">Живые рыбы</a></p>
-						<p>На кухню или на разведение</p>
+					<div class="product-groups__item">
+						<p class="product-groups__title"><a class="product-groups__link" href="">Живые рыбы</a>
+						</p>
+						<p class="product-groups__subtitle">На кухню или на разведение</p>
 					</div>
 				</div>
-				<p class="popular">Популярные</p>
-				<div class="wrap fish-card">
-					<div class="fishcard__item">
-						<div class="fishcard__img">
+				<div class="popular-goods">
+					<p class="popular-goods__title">Популярные</p>
+					<div class="fish-cards fish-cards_vertical-margin_10px">
+						<div class="fishcard fishcard_vertical-margin_15px">
+							<div class="fishcard__img-div">
+								<img class="fishcard__img" src="img/1.png" alt="">
+							</div>
+							<div class="fishcard__text-div">
+								<a class="fishcard__link" href="">Палтус</a>
+								<button class="fishcard__button">Купить</button>
+							</div>
 						</div>
-						<div class="fishcard__text">
-							<a href="">Палтус</a>
-							<button>Купить</button>
+						<div class="fishcard fishcard_vertical-margin_15px">
+							<div class="fishcard__img-div">
+								<img class="fishcard__img" src="img/2.png" alt="">
+							</div>
+							<div class="fishcard__text-div">
+								<a class="fishcard__link" href="">Семга</a>
+								<button class="fishcard__button">Купить</button>
+							</div>
 						</div>
-					</div>
-					<div class="fishcard__item">
-						<div class="fishcard__img">
+						<div class="fishcard fishcard_vertical-margin_15px">
+							<div class="fishcard__img-div">
+								<img class="fishcard__img" src="img/3.png" alt="">
+							</div>
+							<div class="fishcard__text-div">
+								<a class="fishcard__link" href="">Сом</a>
+								<button class="fishcard__button">Купить</button>
+							</div>
 						</div>
-						<div class="fishcard__text">
-							<a href="">Семга</a>
-							<button>Купить</button>
+						<div class="fishcard fishcard_vertical-margin_15px">
+							<div class="fishcard__img-div">
+								<img class="fishcard__img" src="img/4.png" alt="">
+							</div>
+							<div class="fishcard__text-div">
+								<a class="fishcard__link" href="">Мойва</a>
+								<button class="fishcard__button">Купить</button>
+							</div>
 						</div>
-					</div>
-					<div class="fishcard__item">
-						<div class="fishcard__img">
+						<div class="fishcard fishcard_vertical-margin_15px">
+							<div class="fishcard__img-div">
+								<img class="fishcard__img" src="img/5.png" alt="">
+							</div>
+							<div class="fishcard__text-div">
+								<a class="fishcard__link" href="">Сельдь</a>
+								<button class="fishcard__button">Купить</button>
+							</div>
 						</div>
-						<div class="fishcard__text">
-							<a href="">Сом</a>
-							<button>Купить</button>
-						</div>
-					</div>
-					<div class="fishcard__item">
-						<div class="fishcard__img">
-						</div>
-						<div class="fishcard__text">
-							<a href="">Мойва</a>
-							<button>Купить</button>
-						</div>
-					</div>
-					<div class="fishcard__item">
-						<div class="fishcard__img">
-						</div>
-						<div class="fishcard__text">
-							<a href="">Сельдь</a>
-							<button>Купить</button>
-						</div>
-					</div>
-					<div class="fishcard__item">
-						<div class="fishcard__img">
-						</div>
-						<div class="fishcard__text">
-							<a href="">Тунец</a>
-							<button>Купить</button>
+						<div class="fishcard fishcard_vertical-margin_15px">
+							<div class="fishcard__img-div">
+								<img class="fishcard__img" src="img/6.png" alt="">
+							</div>
+							<div class="fishcard__text-div">
+								<a class="fishcard__link" href="">Тунец</a>
+								<button class="fishcard__button">Купить</button>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-		<footer>
-			<span><a href="" class="footer__link">Контакты</a></span>
-			<span><a href="" class="footer__link">© 2021 ИП Рыбов О.А.</a></span>
+		<footer class="footer footer_padding_10px">
+			<span class="footer__span"><a href="" class="footer__link">Контакты</a></span>
+			<span class="footer__span"><a href="" class="footer__link">© 2021 ИП Рыбов О.А.</a></span>
 		</footer>
 	</div>
 </body>
