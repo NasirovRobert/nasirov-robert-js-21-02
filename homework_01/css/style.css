@@ -1,0 +1,174 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body, h1, h2, p {
+    margin: 0;
+    font-family: Aril, Tahoma, sans-serif;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.header {
+    background-color: green;
+}
+
+.header__h1 {
+    color: white;
+    font-size: 25px;
+    padding: 10px;
+}
+
+.main-page {
+    display: flex;
+}
+
+.main-page_vertical-margin_10px {
+    margin: 10px 0;
+}
+
+.aside {
+    background-color: #ccc;
+    width: 25%;
+}
+
+.aside_padding_10px {
+    padding: 10px;
+}
+
+.fish-list__heading {
+    font-weight: bolder;
+    font-size: 14px;
+    word-wrap: break-word;
+}
+
+.fish-list__list {
+    margin: 5px 0;
+    padding-left: 15px;
+}
+
+.fish-list__list-item {
+    list-style-type: none;
+}
+
+.main-content {
+    width: 75%;
+}
+
+.main-content_padding_bottom-left {
+    padding: 0 0 50px 10px;
+}
+
+.content-title_padding_10px {
+    padding: 10px;
+}
+
+.content-title__h2 {
+    font-size: 25px;
+}
+
+.product-groups {
+    display: flex;
+    justify-content: space-between;
+}
+
+.product-groups_vertical-margin_10px {
+    margin: 10px 0;
+}
+
+.product-groups__item {
+    padding: 15px 10px;
+    flex-basis: 49%;
+    background-color: #ccc;
+}
+
+.product-groups__link {
+    color: deepskyblue;
+}
+
+.popular-goods__title {
+    padding: 10px 0 20px 10px;
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+.fish-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.fish-cards_vertical-margin_10px {
+    margin: 10px 0;
+}
+
+.fishcard {
+    flex-basis: 30%;
+    padding: 10px;
+    display: flex;
+    background-color: #ccc;
+}
+
+.fishcard_vertical-margin_15px {
+    margin: 15px 0;
+}
+
+.fishcard__text-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 10px;
+}
+
+.fishcard__img-div {
+    width: 75px;
+    height: 75px;
+}
+
+.fishcard__img {
+    width: 100%;
+}
+
+.fishcard__link {
+    color: deepskyblue;
+}
+
+.footer {
+    background-color: #ccc;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer_padding_10px {
+    padding: 10px;
+}
+
+.footer__link {
+    text-decoration: none;
+    color: #44525e;
+}
+
+@media screen and (max-width: 755px) {
+
+    .product-groups {
+        flex-wrap: wrap;
+    }
+
+    .product-groups__item {
+        flex-basis: 100%;
+        text-align: center;
+    }
+
+    .fish-list__list {
+        padding-left: 0;
+    }
+}
+
+@media screen and (max-width: 478px) {
+    .fishcard {
+        flex-basis: 70%;
+    }
+}
