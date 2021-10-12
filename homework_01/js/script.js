@@ -6,3 +6,5 @@ const secondString = '11:12:1993 12 35';
 
 alert(regexp.test(firstString));
 alert(regexp.test(secondString));
+
+
