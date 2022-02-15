@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+	<link rel="stylesheet" href="hw_8.css">
+</head>
+<body>
+	<table class="table">
+		<caption class="table__caption">Новая таблица</caption>
+		<tbody class="table__tbody">
+		<tr class="table__tr">
+			<th class="table__th">Имя</th>
+			<th class="table__th" colspan="2">Номер телефона</th>
+		</tr>
+		<tr class="table__tr">
+			<td class="table__td">Петр</td>
+			<td class="table__td">89091234567</td>
+			<td class="table__remove">
+				<button class="table__button-remove">Удалить пользователя</button>
+			</td>
+		</tr>
+		<tr class="table__tr">
+			<td class="table__td">Иван</td>
+			<td class="table__td">1212212</td>
+			<td class="table__remove">
+				<button class="table__button-remove">Удалить пользователя</button>
+			</td>
+		</tr>
+		</tbody>
+	</table>
+	<div class="color-change">
+		<div class="color-change__div">
+			<p class="color-change__p">Укажите цвет фона таблицы:  </p>
+			<input class="color-change__input" type="color" value="#ffffff">
+		</div>
+		<button class="color-change__button">Сменить цвет</button>
+	</div>
+	<div class="color-change-caption">
+		<div class="color-change-caption__div">
+			<p class="color-change-caption__p">Укажите цвет фона шапки таблицы:  </p>
+			<input class="color-change-caption__input" type="color" value="#ffe4c4">
+		</div>
+		<button class="color-change-caption__button">Сменить цвет</button>
+	</div>
+	<div class="color-change-text">
+		<div class="color-change-text__div">
+			<p class="color-change-text__p">Укажите цвет текста таблицы:  </p>
+			<input class="color-change-text__input" type="color" value="#000000">
+		</div>
+		<button class="color-change-text__button">Сменить цвет</button>
+	</div>
+	<div class="add-new-tr add-new-tr_margin-vertical">
+		<label for="add-new-tr__input-name-id">Имя:</label>
+		<input placeholder="Введите Ваше имя" type="text" class="add-new-tr__input-name" id="add-new-tr__input-name-id">
+		<label for="add-new-tr__input-phone-id">Номер:</label>
+		<input placeholder="Введите Ваше номер" type="text" class="add-new-tr__input-phone"
+		       id="add-new-tr__input-phone-id">
+		<button class="add-new-tr__button">Add new</button>
+	</div>
+	<script src="hw_8.js"></script>
+</body>
+</html>
