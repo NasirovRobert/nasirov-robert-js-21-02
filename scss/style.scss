@@ -1,0 +1,23 @@
+$color: red;
+
+body {
+  background: $color;
+
+  h1 {
+    font-weight: normal;
+}
+}
+
+a {
+  transition: all 0.5s ease-in-out;
+}
+
+ul {
+  li {
+    display: inline-block;
+  }
+}
+
+h2 {
+  color: #000;
+}
