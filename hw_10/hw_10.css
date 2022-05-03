@@ -1,0 +1,38 @@
+.mainTitle {
+    display: flex;
+    justify-content: center;
+}
+
+.inputDiv {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.loader-box {
+    width: 25%;
+    border: 1px solid black;
+    position: relative;
+}
+
+#loader {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: orange;
+    position: relative;
+}
+
+#gallery {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#gallery img {
+    width: 20%;
+    height: 100%;
+}
+
