@@ -1,10 +1,10 @@
 const gulp = require('gulp'); // подключаем  gulp
-const rename = require('gulp-rename'); // добавляем плагин npm install --save-dev gulp-rename
-// const sass = require('gulp-sass'); // добавляем плагин npm install --save-dev gulp-sass
-const sass = require('gulp-sass')(require('sass'));//добавляем плагин npm install sass gulp-sass --save-dev
-const autoprefixer = require('gulp-autoprefixer');//npm install --save-dev gulp-autoprefixer
+const rename = require('gulp-rename'); // добавляем плагин npm 1.install --save-dev gulp-rename
+// const sass = require('gulp-sass'); // добавляем плагин npm 1.install --save-dev gulp-sass
+const sass = require('gulp-sass')(require('sass'));//добавляем плагин npm 1.install sass gulp-sass --save-dev
+const autoprefixer = require('gulp-autoprefixer');//npm 1.install --save-dev gulp-autoprefixer
 const sourcemaps = require('gulp-sourcemaps');
-const browserSync = require('browser-sync').create();  //npm install browser-sync gulp --save-dev
+const browserSync = require('browser-sync').create();  //npm 1.install browser-sync gulp --save-dev
 
 function css_style(done) {
     gulp.src('./scss/**/*.scss') //src() - открытие файла, берём файл и с ним работаем

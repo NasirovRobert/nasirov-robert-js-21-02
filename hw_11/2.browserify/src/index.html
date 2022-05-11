@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>browserify</title>
+	<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+	<div class="table-div table-div_vertical-margin">
+		<table border="2px" >
+			<caption>Star Wars table</caption>
+			<thead>
+			<tr>
+				<td>name</td>
+				<td>height</td>
+				<td>mass</td>
+				<td>gender</td>
+			</tr>
+			</thead>
+			<tbody id="tbody">
+			</tbody>
+			<tfoot>
+			<tr>
+				<td id="last">last</td>
+				<td id="next">next</td>
+			</tr>
+			<tr>
+				<td id="sort1">sort</td>
+				<td id="sort2">sort</td>
+				<td id="sort3">sort</td>
+				<td id="sort4">sort</td>
+			</tr>
+			</tfoot>
+		</table>
+	</div>
+	<script defer src="bundle.js"></script>
+</body>
+</html>
