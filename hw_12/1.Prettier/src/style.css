@@ -1,0 +1,12 @@
+body {
+    font-size: 25px;
+}
+
+.table-div {
+    display: flex;
+    justify-content: center;
+}
+
+.table-div_vertical-margin {
+    margin: 30px auto;
+}
