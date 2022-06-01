@@ -1,0 +1,17 @@
+.maincontent {
+    background-color: #999999;
+    flex-grow: 1;
+}
+
+h1 {
+    margin: 0 auto;
+}
+
+.table-div {
+    display: flex;
+    justify-content: center;
+}
+
+.table-div_vertical-margin {
+    margin: 30px auto;
+}
