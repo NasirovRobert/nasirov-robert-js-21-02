@@ -1,0 +1,19 @@
+.ToDoItemDiv {
+    margin: 20px auto;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #cccccc;
+    border-radius: 10px;
+    padding: 2%;
+}
+
+.ToDoItemP {
+    width: 80%;
+}
+
+.ToDoItemButton {
+    width: 10%;
+    height: 100%;
+}

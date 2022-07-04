@@ -1,0 +1,18 @@
+.ToDoInputDiv {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.buttonDiv {
+    width: 100%;
+}
+
+.ToDoInputButton {
+    display: block;
+    margin: 10px auto;
+}
+
+textarea {
+    width: 90%;
+}
