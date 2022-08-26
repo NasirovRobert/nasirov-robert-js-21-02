@@ -1,0 +1,13 @@
+.descriptionDivHover {
+    position: relative;
+    display: inline-block;
+}
+
+.descriptionDiv {
+    position: absolute;
+    top: -1.5em;
+    background-color: white;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    color: black;
+}

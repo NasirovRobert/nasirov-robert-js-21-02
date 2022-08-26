@@ -1,0 +1,19 @@
+.pagination__div {
+    display: flex;
+    justify-content: center;
+    flex-basis: 100%;
+}
+
+.pagination__p {
+    padding: 0 5px;
+}
+
+.pagination__p_active {
+    padding: 0 5px;
+    color: blue;
+}
+
+.pagination__p:hover {
+    color: blue;
+    cursor: pointer;
+}

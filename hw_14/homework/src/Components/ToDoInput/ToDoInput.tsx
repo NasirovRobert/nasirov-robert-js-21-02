@@ -1,5 +1,6 @@
 import React from 'react';
 import './ToDoInput.css';
+import WithHover from '../WithHover/WithHover';
 
 interface Props {
   change: Function,
@@ -13,7 +14,7 @@ export default class ToDoInput extends React.Component<Props> {
     this.getTextToToDoList = this.getTextToToDoList.bind(this);
   }
 
-  getTextToToDoList(e) {
+  getTextToToDoList(e: any) {
     this.props.change(e.target.value);
   }
 
@@ -21,9 +22,11 @@ export default class ToDoInput extends React.Component<Props> {
     return (
       <div className="ToDoInputDiv">
         <textarea value={this.props.value} onChange={this.getTextToToDoList} />
-        <div className="buttonDiv">
-          <button type="button" onClick={this.props.add} className="ToDoInputButton">Add to the todolist</button>
-        </div>
+        <WithHover comment="Это Кнопка">
+          <div className="buttonDiv">
+            <button type="button" onClick={this.props.add} className="ToDoInputButton">Add to the todolist</button>
+          </div>
+        </WithHover>
       </div>
     );
   }

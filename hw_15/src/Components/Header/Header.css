@@ -1,0 +1,14 @@
+.header__div {
+    display: flex;
+    justify-content: center;
+}
+
+.header__div_light {
+    background-color: antiquewhite;
+    color: black;
+}
+
+.header__div_dark {
+    background-color: cadetblue;
+    color: white;
+}

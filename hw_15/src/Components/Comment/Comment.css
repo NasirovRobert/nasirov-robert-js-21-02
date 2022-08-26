@@ -1,0 +1,19 @@
+.Comment__div {
+    width: 30%;
+    padding: 5px;
+    margin: 5px;
+}
+
+.Comment__div_light {
+    background-color: white;
+    color: black;
+}
+
+.Comment__div_dark {
+    background-color: black;
+    color: white;
+}
+
+.Comment__username {
+    display: inline-block;
+}

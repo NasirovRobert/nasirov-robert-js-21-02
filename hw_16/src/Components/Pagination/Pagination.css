@@ -1,0 +1,20 @@
+.pagination__div {
+    display: flex;
+    justify-content: center;
+    flex-basis: 100%;
+    margin: 20px auto;
+}
+
+.pagination__button {
+    margin: 0 5px;
+}
+
+.pagination__button_active {
+    margin: 0 5px;
+    color: blue;
+}
+
+.pagination__button:hover {
+    color: blue;
+    cursor: pointer;
+}
