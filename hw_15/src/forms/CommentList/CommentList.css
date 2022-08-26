@@ -1,0 +1,14 @@
+.CommentList__div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.CommentList__div_light {
+    background-color: #DFC897 ;
+}
+
+.CommentList__div_dark {
+    background-color: #282c34;
+}

@@ -2,6 +2,7 @@ import React from 'react';
 import './ToDoList.css';
 import ToDoInput from '../ToDoInput/ToDoInput';
 import ToDoItem from '../ToDoItem/ToDoItem';
+import WithHover from '../WithHover/WithHover';
 
 interface State {
   textArea: string;
@@ -54,9 +55,9 @@ export default class ToDoList extends React.Component<{}, State> {
   render() {
     return (
       <div className="ToDoListDiv">
-        <h1>I am a ToDolist</h1>
-        <ToDoInput add={this.AddToDoItem} value={this.state.textArea} change={this.changeTextArea} />
-        {this.state.arrToDoFromLS[0] ? this.state.arrToDoFromLS.map((item) => <ToDoItem remove={this.removeItem} key={item.id} id={item.id} text={item.text} />) : <p style={{ textAlign: 'center' }}>No ToDo Items</p>}
+        <WithHover comment="Это заголовок"><h1>I am a ToDolist</h1></WithHover>
+        <WithHover comment="Это ТуДу инпут"><ToDoInput add={this.AddToDoItem} value={this.state.textArea} change={this.changeTextArea} /></WithHover>
+        {this.state.arrToDoFromLS[0] ? this.state.arrToDoFromLS.map((item) => <WithHover key={item.id} comment="Это ТуДуЭлемент"><ToDoItem remove={this.removeItem} id={item.id} text={item.text} /></WithHover>) : <p style={{ textAlign: 'center' }}>No ToDo Items</p>}
       </div>
     );
   }

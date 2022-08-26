@@ -1,0 +1,48 @@
+.descriptionDivHover {
+    position: relative;
+    display: inline-block;
+}
+
+.descriptionDiv {
+    position: absolute;
+    background-color: white;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    color: black;
+    opacity: 0%;
+    top: 0em;
+}
+
+.descriptionDivOn {
+    animation-duration: .3s;
+    animation-name: descriptionDivOnHover;
+    animation-fill-mode: forwards;
+}
+
+@keyframes descriptionDivOnHover {
+    from {
+        top: 0em;
+        opacity: 0%;
+    }
+    to {
+        top: -1.5em;
+        opacity: 90%;
+    }
+}
+
+.descriptionDivOff {
+    animation-duration: .3s;
+    animation-name: descriptionDivOffHover;
+    animation-fill-mode: forwards;
+}
+
+@keyframes descriptionDivOffHover {
+    from {
+        top: -1.5em;
+        opacity: 90%;
+    }
+    to {
+        top: 0em;
+        opacity: 0%;
+    }
+}
